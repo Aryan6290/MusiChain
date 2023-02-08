@@ -1,0 +1,190 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "songs",
+				"outputs": [
+					{
+						"name": "registered",
+						"type": "bool"
+					},
+					{
+						"name": "ID",
+						"type": "bytes32"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "fileURL1",
+						"type": "string"
+					},
+					{
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getSongList",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "registerUser",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getPurchasedList",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bytes32[]"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "songID",
+						"type": "bytes32"
+					}
+				],
+				"name": "buyLicense",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "URL1",
+						"type": "string"
+					},
+					{
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "addMusic",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "songID",
+						"type": "bytes32"
+					}
+				],
+				"name": "registerEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "songID",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"name": "authorized",
+						"type": "address"
+					}
+				],
+				"name": "licenseEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "id",
+						"type": "bytes32"
+					}
+				],
+				"name": "LogMusicID",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/1_MusiChain.sol": "MusiChain"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/1_MusiChain.sol": {
+			"keccak256": "0x18e72d725a961699755f9a61a1b1dada4db1d627b47524b1213bd2dba4bcb410",
+			"urls": [
+				"bzzr://910530a1f3b3ba630df7814944fc26e5f05cc046be57890e8876515d23964432"
+			]
+		}
+	},
+	"version": 1
+}
