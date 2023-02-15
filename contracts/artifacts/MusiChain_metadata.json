@@ -180,9 +180,9 @@
 	},
 	"sources": {
 		"contracts/1_MusiChain.sol": {
-			"keccak256": "0x18e72d725a961699755f9a61a1b1dada4db1d627b47524b1213bd2dba4bcb410",
+			"keccak256": "0x552ebafeb36edd2fa504af3e8af0b6431e4c93c66afc658b1fc0f5bfcb46eba5",
 			"urls": [
-				"bzzr://910530a1f3b3ba630df7814944fc26e5f05cc046be57890e8876515d23964432"
+				"bzzr://3f9c123f9cbcdbcf9b72d97d3bf9dde953a7e084115002b5b07be8eaa36430bb"
 			]
 		}
 	},

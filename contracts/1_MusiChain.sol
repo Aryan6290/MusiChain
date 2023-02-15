@@ -39,6 +39,7 @@ contract MusiChain{
 
   function buyLicense(bytes32 songID) public payable {
     uint price = songInfo[songID].price;
+    require(userInfo[msg.sender].registered == true,"User is not registered!");
     require(msg.value >= price,"Amount sent is less than required amount for the song");
     userInfo[msg.sender].purchasedSongs.push(songID);
 
@@ -58,8 +59,6 @@ contract MusiChain{
 
 
   function addMusic(string name, string URL1,uint price) public {
-
-
     bytes32 songID = keccak256(name, URL1, songs.length);
     songInfo[songID].registered = true;
     songInfo[songID].ID = songID;
