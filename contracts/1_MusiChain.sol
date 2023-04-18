@@ -26,13 +26,17 @@ contract MusiChain{
 
 
     struct User{
+      string name;
+      string password;
       bool registered;
       bytes32[] purchasedSongs;
       bytes32[] uploadedSongs;
     }
 
-  function registerUser() public {
+  function registerUser(string name, string password) public {
     userInfo[msg.sender].registered = true;
+    userInfo[msg.sender].name = name;
+    userInfo[msg.sender].password = password;
 
   }
 
